@@ -8,6 +8,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/portal.css" />
     <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/form.css">
 </head>
 
 <body>
@@ -29,26 +30,32 @@
 
     <div class="wrapper">
 
-        <img class="desktop" src="images/desktop.jpg" alt="Photo of an adorable GSD puppy" />
+    <?php
+        /*
+         * Below are 2 different forms to be re-used       
+         * 
+         * Only use one at a time, comment out the other!       
+         *
+         */
 
-        <img class="tablet" src="images/tablet.jpg" alt="Photo of an adorable GSD puppy" />
+        include 'includes/contact_include.php'; #site keys & code here
+    
+        $toAddress = "horicky7@gmail.com";  //place your/your client's email address here
+        $toName = "yingheng he-itc 161"; //place your client's name here
+        $website = "yingheng he -itc 161";  //place NAME of your client's website
 
-        <img class="phone" src="images/phone.jpg"
-            alt="Photo of an adorable but large GSD in the lap of his best buddy" />
+        echo loadContact('simple.php');#demonstrates a simple contact form
+        //echo loadContact('multiple.php');#demonstrates multiple form elements
 
-        <h2 class="subheader">this is contact.php</h2>
-
-        <p>hi, you are at the contact.php</p>
+	?>
 
 
-        <footer>
             <footer>
                 <p><small>&copy; 2019 by <a href="contact.php" target="_blank">yingheng he</a>, All Rights
                         Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a
                             href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid
                             CSS</a></small></p>
             </footer>
-        </footer>
     </div>
 
     <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->

@@ -1,0 +1,71 @@
+div.wrapper > main {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+div.wrapper > main * {
+  box-sizing: border-box;
+}
+div.wrapper > main form {
+  padding: 10px;
+}
+div.wrapper > main form input[type=text],
+div.wrapper > main form input[type=email],
+div.wrapper > main form textarea {
+  outline: none;
+  border: 2px solid #98DDFD;
+  width: 320px;
+  border-radius: 5px;
+}
+div.wrapper > main form input[type=text]:focus,
+div.wrapper > main form input[type=email]:focus,
+div.wrapper > main form textarea:focus {
+  border-color: #4CAF50;
+}
+div.wrapper > main form input[type=text],
+div.wrapper > main form input[type=email] {
+  padding: 10PX;
+  font-size: 16px;
+}
+div.wrapper > main form div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+div.wrapper > main form div label {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0f0f0f;
+}
+div.wrapper > main form div.submitBtnWrapper {
+  text-align: center;
+}
+div.wrapper > main form div.submitBtnWrapper input[type=submit] {
+  width: 320px;
+  height: 35px;
+  border: #4CAF50;
+  background: #4CAF50;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+div.wrapper > main form div.submitBtnWrapper input[type=submit]:hover {
+  border: #409546;
+  background: #409546;
+}
+
+@media (max-width: 420px) {
+  div.wrapper > main {
+    width: 100%;
+  }
+  div.wrapper > main form {
+    width: 100%;
+  }
+  div.wrapper > main form input,
+div.wrapper > main form textarea {
+    width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=form.css.map */
