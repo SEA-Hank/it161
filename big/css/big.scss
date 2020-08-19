@@ -1,0 +1,180 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+input {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: #2700e5;
+
+    &:visited {
+        color: #2700e5;
+    }
+}
+
+html {
+    background-color: #ccc;
+
+    main {
+        background-color: #fff;
+        overflow: auto;
+        width: 80%;
+        margin: auto;
+        padding: 5px;
+
+        header h1 {
+            text-align: center;
+
+            a {
+                color: #000;
+
+                &:visited {
+                    color: #000;
+                }
+            }
+        }
+
+        section {
+            float: left;
+            width: 65%;
+            padding: 20px 0px;
+
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                padding: 5px;
+            }
+
+            ul {
+                margin-left: 30px;
+                list-style: decimal;
+
+                li {
+                    padding: 5px;
+                }
+            }
+
+            div.embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &.agenda-view {
+                    display: none;
+                }
+            }
+
+            @media all and (max-width:1440px) {
+                div.embed-container.month-view {
+                    display: none;
+                }
+
+                div.embed-container.agenda-view {
+                    display: block;
+                }
+            }
+
+            div.gallery {
+                font-size: 0px;
+
+                figure {
+                    display: inline-block;
+                    width: 30%;
+                    margin-right: 5px;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    figcaption {
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        section.research {
+            p {
+                text-indent: 20px;
+            }
+        }
+
+        aside {
+            padding: 20px 0px;
+            float: right;
+            width: 30%;
+
+            ul {
+                // margin-left: 50px;
+                list-style: decimal;
+
+                li {
+                    padding: 5px 0px;
+
+                    a {
+                        font-size: 1.3em;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            address {
+                padding: 5px 0px;
+            }
+
+            dl {
+                padding: 5px 0px;
+
+                dd {
+                    display: none;
+                }
+            }
+        }
+
+        footer {
+            clear: both;
+            padding: 1em;
+            text-align: center;
+        }
+    }
+
+    h1 a {
+        text-decoration: none;
+    }
+}
+
+@media all and (max-width:600px) {
+    html {
+        main {
+            width: 100%;
+
+            section,
+            aside {
+                width: 100%;
+                float: none;
+            }
+
+            aside ul {
+                margin-left: 20px;
+            }
+        }
+    }
+}

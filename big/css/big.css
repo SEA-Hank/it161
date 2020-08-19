@@ -1,0 +1,146 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2700e5;
+}
+a:visited {
+  color: #2700e5;
+}
+
+html {
+  background-color: #ccc;
+}
+html main {
+  background-color: #fff;
+  overflow: auto;
+  width: 80%;
+  margin: auto;
+  padding: 5px;
+}
+html main header h1 {
+  text-align: center;
+}
+html main header h1 a {
+  color: #000;
+}
+html main header h1 a:visited {
+  color: #000;
+}
+html main section {
+  float: left;
+  width: 65%;
+  padding: 20px 0px;
+}
+html main section h2 {
+  text-align: center;
+}
+html main section p {
+  padding: 5px;
+}
+html main section ul {
+  margin-left: 30px;
+  list-style: decimal;
+}
+html main section ul li {
+  padding: 5px;
+}
+html main section div.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+html main section div.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+html main section div.embed-container.agenda-view {
+  display: none;
+}
+@media all and (max-width: 1440px) {
+  html main section div.embed-container.month-view {
+    display: none;
+  }
+  html main section div.embed-container.agenda-view {
+    display: block;
+  }
+}
+html main section div.gallery {
+  font-size: 0px;
+}
+html main section div.gallery figure {
+  display: inline-block;
+  width: 30%;
+  margin-right: 5px;
+}
+html main section div.gallery figure img {
+  width: 100%;
+}
+html main section div.gallery figure figcaption {
+  font-size: 16px;
+  text-align: center;
+}
+html main section.research p {
+  text-indent: 20px;
+}
+html main aside {
+  padding: 20px 0px;
+  float: right;
+  width: 30%;
+}
+html main aside ul {
+  list-style: decimal;
+}
+html main aside ul li {
+  padding: 5px 0px;
+}
+html main aside ul li a {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+html main aside address {
+  padding: 5px 0px;
+}
+html main aside dl {
+  padding: 5px 0px;
+}
+html main aside dl dd {
+  display: none;
+}
+html main footer {
+  clear: both;
+  padding: 1em;
+  text-align: center;
+}
+html h1 a {
+  text-decoration: none;
+}
+
+@media all and (max-width: 600px) {
+  html main {
+    width: 100%;
+  }
+  html main section,
+html main aside {
+    width: 100%;
+    float: none;
+  }
+  html main aside ul {
+    margin-left: 20px;
+  }
+}
+
+/*# sourceMappingURL=big.css.map */
