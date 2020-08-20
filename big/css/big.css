@@ -142,5 +142,13 @@ html main aside {
     margin-left: 20px;
   }
 }
+.contact-feedback {
+  clear: both;
+  text-align: center;
+}
+
+section.fullwidth {
+  width: 100%;
+}
 
 /*# sourceMappingURL=big.css.map */
